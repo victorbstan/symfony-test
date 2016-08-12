@@ -69,7 +69,10 @@ class ImportUsersCommand extends ContainerAwareCommand
         $result = array();
 
         if (($handle = fopen($CSVfilepath, "r")) !== FALSE) {
+            $flag = true;
             while (($data = fgetcsv($handle, 1000, ",")) !== FALSE) {
+                if ($flag) { $flag = false; continue; } // Skip first header line
+
                 $result[] = array(
                     "firstName" => $data[0],
                     "lastName" => $data[1],
