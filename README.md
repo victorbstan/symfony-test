@@ -12,7 +12,12 @@ Issue the following console commands from within the application's root director
 1. Start local server: `php bin/console server:run`.
 2. Create database: `php bin/console doctrine:database:create`.
 3. Create schema: `php bin/console doctrine:schema:create`.
-4. Load users using custom *Console* command: `php bin/console app:import-users <FILE PATH>/user-data.csv`. Wait until shell prompt returns and *updated* vs *create* user count is indicated.
+4. Load users using custom *Console* command: `php bin/console app:import-users <FULL FILE PATH>/user-data.csv`. Wait until shell prompt returns and *updated* vs *create* user count is indicated. You should see something like:
+```
+File name: /srv/www/symfony-test/app/data/user-data.csv
+New users: 100
+Updated users: 0
+```
 5. Visit website at `http://127.0.0.1:8000`. Log in using an imported user's *email* and *first name* as *password*.
 
 ## Production setup
@@ -25,7 +30,12 @@ Note: You might have to prefix some Symfony commands with `SYMFONY_ENV=prod` if 
 4. Clear cache: `php bin/console cache:clear --env=prod --no-debug`.
 5. Create DB if it does not yet exist: `php bin/console doctrine:database:create`.
 6. Update DB schema: `php bin/console doctrine:schema:update`.
-7. Load users using custom *Console* command: `php bin/console app:import-users <FILE PATH>/user-data.csv`. Wait until shell prompt returns and *updated* vs *create* user count is indicated.
+7. Load users using custom *Console* command: `php bin/console app:import-users <FULL FILE PATH>/user-data.csv`. Wait until shell prompt returns and *updated* vs *create* user count is indicated. You should see something like:
+```
+File name: /srv/www/symfony-test/app/data/user-data.csv
+New users: 100
+Updated users: 0
+```
 
 ### Apache on Ubuntu setup
 
