@@ -72,4 +72,4 @@ I named mine `symfony3test`, and am using a subdomain for this application.
 
 ## Misc.
 
-Sample CSV file and Sqlite db are located in `app/data/`.
+Sample CSV file and Sqlite db (once DB is created) are located in `app/data/`.
