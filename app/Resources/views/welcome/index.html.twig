@@ -1,0 +1,9 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <img src="{{ asset('images/tes_logo.png') }}" alt="" />
+    <hr>
+    <div class="text-center">
+        <a href="{{ path('app_user_edit', { 'id': user.id }) }}" class="btn btn-primary btn-lg">Edit user "{{user.firstName}} {{user.lastName}}"</a>
+    </div>
+{% endblock %}
