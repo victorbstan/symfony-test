@@ -39,7 +39,7 @@ Updated users: 0
 
 ### Apache on Ubuntu setup
 
-Note: these are setup instructions for a Ubuntu Linux web-server assuming that you have already installed Apache2 and PHP 5+ and Sqlite.
+Note: these are setup instructions for a Ubuntu Linux web-server assuming that you have already installed Apache2 and PHP 7+ and Sqlite.
 
 #### Requirements
 1. Apache2
