@@ -64,7 +64,7 @@ class ImportUsersCommand extends ContainerAwareCommand
 
     private function readCSVFile($filename)
     {
-        $CSVfilepath = dirname(__DIR__).'/../../../'.$filename;
+        $CSVfilepath = $filename;
 
         $result = array();
 
